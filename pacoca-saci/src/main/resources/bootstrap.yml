@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: saci
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: ${spring.application.name}, settings, toggles
+      search-paths:
+        - toggles
